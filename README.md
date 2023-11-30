@@ -1,4 +1,4 @@
-# M5 - Kenzie Buster
+# API Buster
 
 ## Preparando ambiente para execução dos testes
 
@@ -37,42 +37,7 @@ source venv/Scripts/activate
 pip install pytest-testdox pytest-django
 ```
 
-## Execução dos testes:
 
-
-- Tarefa 1:
-```python
-pytest --testdox -vvs tests/tarefas/t1/
-```
-
-- Tarefa 2:
-```python
-pytest --testdox -vvs tests/tarefas/t2/
-```
-
-- Tarefa 3:
-```python
-pytest --testdox -vvs tests/tarefas/t3/
-```
-
-- Tarefa 4:
-```python
-pytest --testdox -vvs tests/tarefas/t4/
-```
----
-
-Você também pode rodar cada método de teste isoladamente:
-
-```shell
-pytest --testdox -vvs caminho/para/o/arquivo/de/teste::NomeDaClasse::nome_do_metodo_de_teste
-```
-
-**Exemplo**: executar somente "test_user_login_without_required_fields".
-
-```shell
-pytest --testdox -vvs tests/tarefas/t2/users/t2_user_views_test.py::UserLoginViewsT2Test::test_user_login_without_required_fields
-```
---- 
 
 Para executar todos os testes:
 ```shell
